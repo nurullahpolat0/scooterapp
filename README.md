@@ -1,22 +1,19 @@
-# Taxi App
+# Scooter App
 
 ## Description
-Simple app for showing available taxies in Hamburg area using My Taxi fake API. 
+Bu uygulama ile şehirde belli lokasyonlarda bulunan akıllı çöp kutularına çeşitli geri dönüşüme müsait çöpler atılmak suretiyle uygulama içerisinde puan kazanılmaktadır. Uygulama içerisinde kazanılan puanlar ile yine belirli lokasyonlarda bulunan elektrikli scooterlara puan oranında ücretsiz binilebilmektedir.  
 
-The app was created using only Kotlin and MVVM architecture with android architecture components viewmodel, lifecycle, livedata.
-The comunication between viewModel and view was through LiveData instead RxJava 2 for simplicity.
-Groupie was used to get Expandable groups in RecyclerView in a very simple way.
+Bu uygulama kotlin dili ve MVVVM mimarisi ile geliştirilmiştir.
+Uygulama apk dosyası apkdosyası klasöründe yer almaktadır.
 
 ## Libraries used
 * Retrofit
-* RxJava 2
-* Groupie
 * Architecture Components (LiveData, LifeCycle and ViewModel)
 
 ## Screenshots
 
-![Screenshot 1](https://github.com/yiyocx/taxi-app/blob/master/screenshots/1.png)
+![Screenshot 1](https://i.hizliresim.com/dju9ynt.png)
 
-![Screenshot 2](https://github.com/yiyocx/taxi-app/blob/master/screenshots/2.png)
+![Screenshot 2](https://i.hizliresim.com/pih9umu.png)
 
-![Screenshot 3](https://github.com/yiyocx/taxi-app/blob/master/screenshots/3.png)
+
