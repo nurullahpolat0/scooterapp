@@ -6,6 +6,8 @@ Bu uygulama ile şehirde belli lokasyonlarda bulunan akıllı çöp kutularına 
 Bu uygulama kotlin dili ve MVVVM mimarisi ile geliştirilmiştir.
 Uygulama apk dosyası apkdosyası klasöründe yer almaktadır.
 
+Projede çöp kutuları çöp atma karşılığında puan üreten bir qr kod oluşturmaktadır. Uygulamadan qr kodu okutmak suretiyle puanlar kazanılmaktadır.
+
 ## Libraries used
 * Retrofit
 * Architecture Components (LiveData, LifeCycle and ViewModel)
