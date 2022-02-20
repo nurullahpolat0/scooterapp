@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "897186447419",
+    "firebase_url": "https://scooter-46e2e-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "scooter-46e2e",
+    "storage_bucket": "scooter-46e2e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:897186447419:android:1e2f3c3f5d240ea0301c1e",
+        "android_client_info": {
+          "package_name": "com.nurullah.scooterapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "897186447419-kqn0r986adv6g87g8dq3tbn3hfvc5qpf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHI0ZWM4j5eEQM2wh935ErnRzLl4CWnds"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "897186447419-kqn0r986adv6g87g8dq3tbn3hfvc5qpf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

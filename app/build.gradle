@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion = "31.0.0"
+    defaultConfig {
+        applicationId "com.nurullah.scooterapp"
+        minSdkVersion 23
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.4.0-alpha01'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2'
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+
+    implementation "com.xwray:groupie:$groupie_version"
+    implementation "com.xwray:groupie-databinding:$groupie_version"
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.google.firebase:firebase-database-ktx:20.0.3'
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:29.1.0')
+
+    // Declare the dependency for the Firebase Authentication library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation "com.journeyapps:zxing-android-embedded:3.6.0"
+    implementation 'androidx.activity:activity-ktx:1.4.0'
+    implementation "androidx.core:core-ktx:1.6.0"
+    testİmplementation 'junit:junit:4.12'
+    androidTestİmplementation'androidx.test:runner:1.1.1'
+    androidTestİmplementation 'androidx.test.espresso:espresso-core:3.1.1'
+}

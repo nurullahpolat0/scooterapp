@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.nurullah.scooterapp.viewmodels.MainViewModel" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.MainActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:text="POLAT"
+                    android:layout_gravity="start"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/profile"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:padding="9dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/userr"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/qrCode"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_gravity="end"
+                    android:src="@drawable/qr_code"/>
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".activities.MainActivity" />
+
+        <include
+            android:id="@+id/bottomSheet"
+            layout="@layout/bottom_sheet_layout" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
